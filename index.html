@@ -3,9 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <title>Pixel Drawing</title>
-<script type="text/javascript" src="drawstuff.js"></script>
+<script type="module" src="drawstuff.js"></script>
 </head>
-<body onload="main();">
 <canvas id="viewport" width="512" height="512"></canvas>
+<div>
+    <button onclick="switchInput()">Switch Input</button>
+    <div>
+        <label for="horizontalAngle">Horizontal Angle:</label>
+        <input type="number" id="horizontalAngle" min="0" max="360" value="45">
+            
+    </div>
+    <div>
+        <label for="verticalAngle">Vertical Angle:</label>
+        <input type="number" id="verticalAngle" min="0" max="360" value="45">
+    </div>
+
+    <div>
+        <div>
+            <h3>Eye Location</h3>
+        </div>
+        <label for="x">X:</label>
+        <input type="number" id="x" value="0.5">
+        <br>
+        <label for="y">Y:</label>
+        <input type="number" id="y" value="0.5">
+        <br>
+        <label for="z">Z:</label>
+        <input type="number" id="z" value="-0.5">
+
+    </div>
+    <div>
+        <div>
+            <h3>Lookup</h3>
+        </div>
+        <label for="lookupX">Lookup X:</label>
+        <input type="number" id="lookupX" value="0">
+        <br>
+        <label for="lookupY">Lookup Y:</label>
+        <input type="number" id="lookupY" value="1">
+        <br>
+        <label for="lookupZ">Lookup Z:</label>
+        <input type="number" id="lookupZ" value="0">
+    </div>
+    <div>
+        <div>
+            <h3>Look At</h3>
+        </div>
+        <label for="lookatX">Look At X:</label>
+        <input type="number" id="lookatX" value="0">
+        <br>
+        <label for="lookatY">Look At Y:</label>
+        <input type="number" id="lookatY" value="0">
+        <br>
+        <label for="lookatZ">Look At Z:</label>
+        <input type="number" id="lookatZ" value="1">
+    </div>
+</div>
 </body>
+<script src="./drawstuff.js"></script>
 </html>
